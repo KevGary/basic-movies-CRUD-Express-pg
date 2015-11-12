@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <div class="movie-display">
+    title: <%= movie.title %><br>
+    genre: <%= movie.genre %><br>
+    year: <%= movie.year %><br>
+    <form method="post" action="/:id">
+      <input name="title" type="text" value="" placeholder="title">
+      <input name="genre" type="text" placeholder="genre">
+      <input name="year" type="text" placeholder="year">
+      <input type="submit" name="submit" value=<%= movie.id %>>
+      <input type="submit" name="delete" value=<%= movie.id %>>
+    </form>
+  </div>
+</body>
+</html>
